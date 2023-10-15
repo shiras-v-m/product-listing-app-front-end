@@ -1,0 +1,66 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame{
+    width: 500px;
+
+    padding: 2rem;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+.formData{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap:20px
+}
+form{
+    text-align: center;
+}
+.inputCategory{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding-left: 10px;
+    width: 100%;
+    height: 2.5rem;
+}
+.titleTxt{
+    font-size: 16px;
+    font-weight: 600;
+}
+.addCategoryIcon{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgb(20, 20, 227);
+    padding: 2px;
+    color: white;
+}
+.addCategoryIcon:active{
+    background-color: rgb(128, 128, 210);
+
+}
+.addedItems{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.itemTxt{
+    padding: 6px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.closeIcon{
+    font-size: 21px;
+    cursor: pointer;
+}
