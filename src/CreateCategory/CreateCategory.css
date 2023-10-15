@@ -12,10 +12,10 @@
     background: whitesmoke;
     border-radius: 5px;
 }
-.formData{
+.formData1{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    display: flex;
+    display: flex; 
     align-items: center;
     gap:20px
 }

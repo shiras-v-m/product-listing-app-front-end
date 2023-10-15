@@ -38,7 +38,8 @@ function AddProduct() {
 
   const addProduct= async ()=>{
     await axios.post(`${BASE_URL}/createProduct`,{id:selectedOptionId,...data}).then((res)=>{   
-      console.log(res.message);
+      console.log(res);
+      alert(res.data.message)
       setData({
         pName:"",
         description:"",

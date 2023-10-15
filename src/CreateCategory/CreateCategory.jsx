@@ -16,9 +16,11 @@ import { useNavigate } from 'react-router-dom'
     const addCategories=async ()=>{
         await axios.post(`${BASE_URL}/createCategories`,{categories:addedItems}).then((res)=>{
             console.log(res.data.message);
+            alert(res.data.message)
             navigate('/addproduct')
     }).catch((error)=>{
         console.log(error.response.data.error); 
+        alert(error.response.data.error)
     })
     }
 
@@ -74,9 +76,9 @@ import { useNavigate } from 'react-router-dom'
         <div className="frame">
             <h2>Add Categories</h2>
             <form onSubmit={handleSubmit}>
-               <div className='formData'>
+               <div className='formData1'>
                     <span className='titleTxt'>Title</span>
-                    <input ref={inputRef} autoFocus className='inputCategory' type="text" value={item} placeholder='Enter category name...' onChange={(e)=>{setItem(e.target.value)}} />
+                    <input ref={inputRef} autoFocus className='inputCategory' type="text" value={item} placeholder='Enter category name...' onChange={(e)=>{setItem(e.target.value)}} required/>
                     <span  className="material-symbols-outlined addCategoryIcon" onClick={(e)=>handleAddItem(e)} >add</span>
                </div>
                 <div className='addedItems' >
