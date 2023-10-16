@@ -88,15 +88,15 @@ function AddProduct() {
 
             <div className='inputFieldContainer'>
               <span className='titleTxt'>Product Name</span>
-              <input className='inputCategory'   name="pName" type="text" value={data.pName} onChange={handleInputChange} placeholder='Enter category name...' />
+              <input className='inputCategory'   name="pName" type="text" value={data.pName} onChange={handleInputChange} placeholder='Enter Product name...' />
             </div>
             <div className='inputFieldContainer'>
               <span className='titleTxt'>Description</span>
-              <input className='inputCategory' type="text"   name="description" value={data.description} onChange={handleInputChange} placeholder='Enter category name...' />
+              <input className='inputCategory' type="text"   name="description" value={data.description} onChange={handleInputChange} placeholder='Enter Description name...' />
             </div>
             <div className='inputFieldContainer'>
               <span className='titleTxt'>Price</span>
-              <input className='inputCategory' type="Number"    name="price"  value={data.price} onChange={handleInputChange} placeholder='Enter category name...' />
+              <input className='inputCategory' type="Number"    name="price"  value={data.price} onChange={handleInputChange} placeholder='Enter price name...' />
             </div>
 
 

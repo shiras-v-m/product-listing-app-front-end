@@ -78,7 +78,7 @@ import { useNavigate } from 'react-router-dom'
             <form onSubmit={handleSubmit}>
                <div className='formData1'>
                     <span className='titleTxt'>Title</span>
-                    <input ref={inputRef} autoFocus className='inputCategory' type="text" value={item} placeholder='Enter category name...' onChange={(e)=>{setItem(e.target.value)}} required/>
+                    <input ref={inputRef} autoFocus className='inputCategory' type="text" value={item} placeholder='Enter category name...' onChange={(e)=>{setItem(e.target.value)}}/>
                     <span  className="material-symbols-outlined addCategoryIcon" onClick={(e)=>handleAddItem(e)} >add</span>
                </div>
                 <div className='addedItems' >
